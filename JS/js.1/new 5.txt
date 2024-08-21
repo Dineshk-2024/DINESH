@@ -1,0 +1,13 @@
+javascript:-
+
+
+arithmetic operator
+relational operator
+logical operator
+equality operator
+assignment operator
+incriment operator
+decriment operator
+ternary operator
+bit wise operator
+

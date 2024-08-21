@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="./validate.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h3>Login Form</h3>
+        <form onsubmit="return validateData()">
+           
+                <label >Email Id:</label>
+                <input type="text" id="email"/>  <br>
+                <span id="emailmsg" style="color: red;"></span>  
+                <br>
+                <label >Password</label>
+                <input type="password" id="password"/><br>
+                <span id="pwdmsg" style="color:red"></span>
+                <br>
+            <input type="submit" value="Login"/>
+            
+        </form>
+    </body>
+</html>

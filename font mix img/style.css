@@ -1,0 +1,13 @@
+
+.shashank {
+    font-size: 200px;
+    font-style: oblique;
+    position: relative;
+    left: 40px;
+    background: url(./SHAHSA.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}

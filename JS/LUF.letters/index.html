@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function lc(){
+            output.innerHTML=input.innerHTML.toLowerCase()
+        }
+        function uc(){
+            output.innerHTML=input.innerHTML.toUpperCase()
+        }
+        function flc(){
+            output.innerHTML=input.innerHTML.charAt(0).toUpperCase()+input.innerHTML.slice(1)
+        }
+    </script>
+    <title>LUF letters</title>
+</head>
+<body>
+    <center>
+    <h1>How To Convert The Text Into Lowercase, Uppercase & First Letter Capatalizse</h1>
+    <h4>Javascript</h4>
+    <hr>
+    <input type="radio" name="radio1" onclick="lc()">Lowercase</input>
+    <input type="radio" name="radio1" onclick="uc()">Uppercase</input>
+    <input type="radio" name="radio1" onclick="flc()">First Letter Capital</input>
+    <hr>
+    <h4 id="input">my name is dinesh</h4>
+    <hr>
+    <h1 id="output"></h1>
+</center>
+</body>
+</html>

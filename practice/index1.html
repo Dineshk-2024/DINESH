@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with 100 Rows</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table with 100 Rows</h1>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Row Number</th>
+                <th>Sample Text</th>
+                <th>done</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added here by JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        function createTable() {
+            const tableBody = document.querySelector('#myTable tbody');
+
+            for (let i = 1; i <= 100; i++) {
+                const row = document.createElement('tr');
+                
+                const cell1 = document.createElement('td');
+                cell1.textContent = i;
+                row.appendChild(cell1);
+
+                const cell2 = document.createElement('td');
+                cell2.textContent = 'Sample text ' + i;
+                row.appendChild(cell2);
+
+                tableBody.appendChild(row);
+            }
+        }
+
+        // Call the function to create the table
+        createTable();
+    </script>
+</body>
+</html>

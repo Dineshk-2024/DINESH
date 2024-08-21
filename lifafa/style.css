@@ -1,0 +1,9 @@
+.mixed-color-box {
+    width: 600px;
+    height: 400px;
+
+    background: linear-gradient(to right, lightgreen, rgb(121, 172, 248));
+}
+
+
+

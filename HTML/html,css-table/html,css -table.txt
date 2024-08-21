@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCB</title>
+    <link rel="stylesheet" href="two.css">
+    <style>
+        table{
+            background-color: azure;
+             width: 500px;
+              height: 150px;
+              width: 50%;
+              border-collapse: collapse;
+              padding: 200px;
+              margin: 200px;
+              border: 0cap;
+        }
+        th, td {
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+    <table >
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>class</th>
+                <th>department</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>dinesh</td>
+                <td>22</td>
+                <td>clg</td>
+                <td>Bsc it</td>
+            </tr>
+            <tr>
+                <td>ganesh</td>
+                <td>21</td>
+                <td>clg1</td>
+                <td>Bsc cs</td>
+            </tr>
+
+            <tr>
+                <td>ranesh</td>
+                <td>20</td>
+                <td>clg2</td>
+                <td>Bcom</td>
+            </tr>
+           
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

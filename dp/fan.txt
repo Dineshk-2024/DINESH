@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Fan</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="fan">
+        <div class="blade blade1"></div>
+        <div class="blade blade2"></div>
+        <div class="blade blade3"></div>
+        <div class="blade blade4"></div>
+    </div>
+    <button id="toggleButton">Start/Stop Fan</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.fan {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.blade {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 5px;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+.blade1 {
+    transform: rotate(0deg);
+}
+
+.blade2 {
+    transform: rotate(90deg);
+}
+
+.blade3 {
+    transform: rotate(180deg);
+}
+
+.blade4 {
+    transform: rotate(270deg);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+const fan = document.querySelector('.fan');
+const toggleButton = document.getElementById('toggleButton');
+let spinning = false;
+
+toggleButton.addEventListener('click', () => {
+    spinning = !spinning;
+    if (spinning) {
+        fan.classList.add('spin');
+    } else {
+        fan.classList.remove('spin');
+    }
+});

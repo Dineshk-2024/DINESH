@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Moving Fan</title>
+</head>
+<body>
+    <div class="main">
+        <img src="fan1.png" alt="" srcset=""><br><br>
+        <button onclick="myfunon()">ON </button>
+        <button onclick="myfunoff()">OFF </button>
+        <button onclick="myfun2()">1</button> 
+        <button onclick="myfun3()">2</button>
+        <button onclick="myfun4()">3 </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>           
+
+css
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+}
+@keyframes fananim
+{
+    100%
+    {
+     transform: rotate(360deg);
+    }
+}                        
+
+javascript
+
+let fan=document.getElementById("fan");
+
+function myfunon()
+{
+fan.style.animationDuration = "3s";
+}
+function myfunoff()
+{
+    fan.style.animationDuration = "0s";
+}
+function myfun2()
+{
+    fan.style.animationDuration = "1s";
+}
+function myfun3()
+{
+    fan.style.animationDuration = "0.5s";
+}
+function myfun4()
+{
+    fan.style.animationDuration = "0.1s";
+}
